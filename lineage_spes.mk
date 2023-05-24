@@ -15,11 +15,51 @@ $(call inherit-product, device/xiaomi/spes/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Additions
-$(call inherit-product-if-exists, vendor/gapps/common.mk)
+$(call inherit-product-if-exists, vendor/gms/common/common-vendor.mk)
 $(call inherit-product-if-exists, vendor/prebuilt-apps/config.mk)
 
 # Camera
-$(call inherit-product-if-exists, vendor/miuicamera/config.mk)
+$(call inherit-product-if-exists, vendor/spes-miuicamera/miuicamera.mk)
+
+# Rising Stuff
+RISING_OFFICIAL := false
+
+# Aperture Camera
+TARGET_BUILD_APERTURE_CAMERA := true
+
+# Blur Support
+TARGET_ENABLE_BLUR := true
+
+# Gapps
+WITH_GMS := true
+TARGET_CORE_GMS := true
+
+# extra flag under TARGET_CORE_GMS
+TARGET_CORE_GMS_EXTRAS := true
+
+#UDFPS animations
+TARGET_HAS_UDFPS := false
+
+# Spoof build description/fingerprint as pixel device
+TARGET_USE_PIXEL_FINGERPRINT := true
+
+#Assistant flags
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+
+#Face unlock supported
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+#Dolby flags
+TARGET_EXCLUDES_AUDIOFX := true
+
+#Chipset
+RISING_CHIPSET := "Snapdragon 680"
+
+#Maintainer
+RISING_MAINTAINER := "Shripad J"
+
+#Package type
+RISING_PACKAGE_TYPE := PIXEL
 
 # Product Specifics
 PRODUCT_NAME := lineage_spes
