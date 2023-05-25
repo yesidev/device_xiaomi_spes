@@ -19,7 +19,7 @@ $(call inherit-product-if-exists, vendor/gms/common/common-vendor.mk)
 $(call inherit-product-if-exists, vendor/prebuilt-apps/config.mk)
 
 # Camera
-$(call inherit-product-if-exists, vendor/spes-miuicamera/common/miuicamera.mk)
+$(call inherit-product-if-exists, vendor/spes-miuicamera/miuicamera.mk)
 
 # OyxgenOS
 $(call inherit-product-if-exists, vendor/OOS/OOS.mk)
