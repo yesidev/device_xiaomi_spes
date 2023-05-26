@@ -24,3 +24,6 @@ git clone https://github.com/shripad-jyothinath/vendor_xiaomi_spes.git vendor/xi
 
 #Sync Kernel tree
 git clone https://github.com/Jabiyeff/kernel_xiaomi_spes_header.git kernel/xiaomi/spes
+
+#Sync MIUIcamera
+git clone https://github.com/shripad-jyothinath/android_vendor_xiaomi_spes-miuicamera.git
