@@ -59,7 +59,7 @@ TARGET_EXCLUDES_AUDIOFX := true
 RISING_CHIPSET := "Snapdragon 680"
 
 #Maintainer
-RISING_MAINTAINER := "Shripad J"
+RISING_MAINTAINER := "Shripad-J"
 
 #Package type
 RISING_PACKAGE_TYPE := PIXEL
