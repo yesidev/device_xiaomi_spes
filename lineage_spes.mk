@@ -15,8 +15,8 @@ $(call inherit-product, device/xiaomi/spes/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Additions
-$(call inherit-product-if-exists, vendor/gms/common/common-vendor.mk)
-$(call inherit-product-if-exists, vendor/prebuilt-apps/config.mk)
+#$(call inherit-product-if-exists, vendor/gms/common/common-vendor.mk)
+#$(call inherit-product-if-exists, vendor/prebuilt-apps/config.mk)
 
 # Camera
 $(call inherit-product-if-exists, vendor/spes-miuicamera/miuicamera.mk)
@@ -34,11 +34,11 @@ TARGET_BUILD_APERTURE_CAMERA := false
 TARGET_ENABLE_BLUR := true
 
 # Gapps
-WITH_GMS := true
-TARGET_CORE_GMS := true
+WITH_GMS := false
+TARGET_CORE_GMS := false
 
 # extra flag under TARGET_CORE_GMS
-TARGET_CORE_GMS_EXTRAS := true
+TARGET_CORE_GMS_EXTRAS := false
 
 #UDFPS animations
 TARGET_HAS_UDFPS := false
@@ -55,14 +55,17 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 #Dolby flags
 TARGET_EXCLUDES_AUDIOFX := true
 
+#Google Telephony
+TARGET_USE_GOOGLE_TELEPHONY := false
+
 #Chipset
-RISING_CHIPSET := "Snapdragon 680"
+RISING_CHIPSET := "Snapdragon-680"
 
 #Maintainer
 RISING_MAINTAINER := "Shripad-J"
 
 #Package type
-RISING_PACKAGE_TYPE := PIXEL
+RISING_PACKAGE_TYPE := VANILLA
 
 # Product Specifics
 PRODUCT_NAME := lineage_spes
