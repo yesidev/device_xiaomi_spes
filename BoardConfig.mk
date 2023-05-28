@@ -177,8 +177,7 @@ TARGET_LMKD_STATS_LOG := true
 # Media
 TARGET_DISABLED_UBWC := true
 
-#MiuiCamera
--include vendor/xiaomi/spes-miuicamera/BoardConfig.mk
+
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
